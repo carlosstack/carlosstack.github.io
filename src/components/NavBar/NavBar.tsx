@@ -35,22 +35,21 @@ const NavBar: React.FC = () => (
         >
           Sobre mi
         </Link>
-        <a
-          href="#about"
+        <Link
+          to="/work"
           onClick={() => {
             rotateLogo();
           }}
         >
           Mi trabajo
-        </a>
-        <a
-          href="#about"
+        </Link>
+        <Link to="/ex"
           onClick={() => {
             rotateLogo();
           }}
         >
-          Experimentos
-        </a>
+          Cursos
+        </Link>
         <a
           href="#about"
           onClick={() => {

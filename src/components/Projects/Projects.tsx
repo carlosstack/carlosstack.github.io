@@ -3,7 +3,7 @@ import './Projects.scss';
 
 const Projects: React.FC = () => (
   <div className="Projects">
-    Projects Component
+    <h1>Mi trabajo</h1>
   </div>
 );
 

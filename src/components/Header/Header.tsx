@@ -5,10 +5,15 @@ import "./Header.scss";
 const Header: React.FC = () => (
   <header className="Header">
     <div className="HeaderTitle">
-      <h1>
-        Hola, soy <span className="HeaderName">Carlos Hernández</span>.
-      </h1>
-      <h1>Desarrollador Web Full Stack.</h1>
+      <div className="HelloText">Hola</div>
+      <div>
+        <span>
+          Soy 
+          <span className="NameText"> Carlos Hernández</span>
+        </span>
+        <br/>
+        <div>Desarrollador Web Full Stack.</div>
+      </div>
     </div>
   </header>
 );

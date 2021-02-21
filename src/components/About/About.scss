@@ -5,14 +5,51 @@
   color: #fff;
   text-align: center;
   position: absolute;
+  background-color: #111111a1;
+  pointer-events: none;
+  padding: 30px 60px;
 }
 
 .About h1 {
   font-size: 36px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
   color: #fff;
+  pointer-events: all;
+  opacity: 1;
+  animation: showup 7s;
+}
+
+.About p{
+  width: 90%;
+  margin: auto;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 10px;
+  animation: showup 7s;
+}
+
+.About .Skills{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 40% 20% 40%;
+}
+
+.Divider{
+  width: 200px;
+  height: 200px;
+  background-image: url('../../assets/separator.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  animation: showup 15s;
 }
 
 
+
+@keyframes showup {
+  0% {opacity:0;}
+  40% {opacity:1;}
+  100% {opacity:1;}
+}

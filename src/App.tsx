@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Particles from "react-particles-js";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/work">
+            <Projects />
           </Route>
         </Switch>
         <NavBar />
