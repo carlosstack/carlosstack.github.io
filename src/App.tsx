@@ -1,24 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import About from "./components/About/About";
+import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Particles from "react-particles-js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Particles className="particlesjs"
+          height={"100vh"}
+          params={{
+            particles: {
+              number: {
+                value: 100,
+                density: {
+                  enable: true,
+                  value_area: 1800,
+                },
+              },
+            },
+            background: {
+              color: "#111111",
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "grab",
+                },
+              },
+            },
+          }}
+        />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Header />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+        </Switch>
+        <NavBar />
+        
+      </Router>
+      
     </div>
   );
 }

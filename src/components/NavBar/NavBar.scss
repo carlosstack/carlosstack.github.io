@@ -1,0 +1,78 @@
+.NavBar {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+}
+.NavContainer .NavLogo{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.NavContainer a{
+    width: 150px;
+    height: 40px;
+    background: none;
+    //border: 1px solid #fff;
+    color: #fff;
+    font-size:18px;
+    margin-top: 20px;
+    transition: 0.3s linear;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid transparent
+}
+
+.NavContainer a i{
+    font-size: 18px;
+    margin-left: 10px;
+    transition: .3s ease-in;
+}
+
+
+.NavContainer a:hover{
+   border-bottom: 2px solid #fff;
+}
+
+.NavContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavContainer a{
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.LogoContainer{
+    width: 100px;
+    height: 100px;
+}
+
+.NavLogo{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/logo-base.png');
+    background-size: cover;
+    transition: 0.4s ease-in;
+    position: absolute;
+}
+
+.Logo{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/logo-texto.png');
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+}
+
+.RotateLogo{
+    transform: rotate(90deg);
+}
