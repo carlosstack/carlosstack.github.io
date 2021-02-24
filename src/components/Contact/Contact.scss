@@ -1,1 +1,28 @@
-.Contact {}
+.ContactContainer {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.ContactContainer svg {
+  margin-bottom: -20px;
+}
+.Contact {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  background-color: #333;
+  pointer-events: none;
+}
+
+.Contact h1 {
+  margin-top: -100px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  pointer-events: all;
+  opacity: 1;
+}

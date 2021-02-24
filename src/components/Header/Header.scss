@@ -3,78 +3,118 @@
 .Header {
   height: 100%;
   width: 100%;
-  background-color: #111111;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #fff;
 }
 
 .HeaderTitle {
   height: 100%;
   width: 100%;
   position: absolute;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  background-color: #111111a1;
-  margin-top: -40px;
-  font-size: 28px;
-  font-weight: 200;
-  overflow:hidden;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
+  font-size: 40px;
+  font-weight: 300;
+  padding: 50px;
 }
 
-.HelloText{
-  font-size: 76px;
+.HelloText {
+  animation: slidein 2s;
 }
 
-.NameText{
+.HeaderSubTitle {
+  font-weight: 300;
+  animation: slideinr 2s;
+}
+
+.DotBlue {
   color: skyblue;
   font-weight: 400;
 }
 
-.HeaderTitle div {
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
+.down-btn {
+  font-size: 18px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 10px;
+  pointer-events: all;
+  animation: showup 5s;
+  transition: .2s ease-in;
 }
 
-.HeaderTitle div:first-of-type {
-  animation: showup 7s;
+.down-btn i{
+  font-size: 18px;
+  transition: .2s ease-in;
 }
 
-.HeaderTitle div:last-of-type {
-  width:600px;
-  animation: reveal 7s;
+
+.down-btn:hover {
+  background-color: skyblue;
+  border-color: skyblue;
+  color: #000;
 }
 
-.HeaderTitle div:last-of-type span {
-  margin-left: 0px;
-  animation: slidein 7s;
+.down-btn:hover i{
+  transform: rotate(90deg);
+}
+
+.down-btn i {
+  margin-left: 10px;
 }
 
 @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+  0% {
+    margin-left: -800px;
+    opacity: 0;
+  }
+  20% {
+    margin-left: -800px;
+    opacity: 0;
+  }
+  35% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
 }
 
-@keyframes reveal {
-    0% {opacity:0; width:0px;}
-    20% {opacity:1; width:0px;}
-    30% {width:600px;}
-    80% {opacity:1;}
-    100% {width:600px;}
+@keyframes slideinr {
+  0% {
+    margin-right: -800px;
+    opacity: 0;
+  }
+  20% {
+    margin-right: -800px;
+    opacity: 0;
+  }
+  35% {
+    margin-right: 0px;
+    opacity: 1;
+  }
+  100% {
+    margin-right: 0px;
+    opacity: 1;
+  }
 }

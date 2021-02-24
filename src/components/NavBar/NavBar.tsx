@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
 let current = 0;
@@ -15,41 +14,38 @@ const NavBar: React.FC = () => (
   <div className="NavBar">
     <nav>
       <div className="NavContainer">
-        <span className="LogoContainer">
+        {/* <span className="LogoContainer">
           <span className="NavLogo" id="NavLogo"></span>
           <span className="Logo"></span>
-        </span>
-        <Link
-          to="/"
+        </span> */}
+        <a 
           onClick={() => {
             rotateLogo();
           }}
         >
           Inicio
-        </Link>
-        <Link
-          to="/about"
+        </a>
+        <a
           onClick={() => {
             rotateLogo();
           }}
         >
           Sobre mi
-        </Link>
-        <Link
-          to="/work"
+        </a>
+        <a
           onClick={() => {
             rotateLogo();
           }}
         >
           Mi trabajo
-        </Link>
-        <Link to="/ex"
+        </a>
+        <a
           onClick={() => {
             rotateLogo();
           }}
         >
           Cursos
-        </Link>
+        </a>
         <a
           href="#about"
           onClick={() => {

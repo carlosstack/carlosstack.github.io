@@ -3,7 +3,8 @@ import './Projects.scss';
 
 const Projects: React.FC = () => (
   <div className="Projects">
-    <h1>Mi trabajo</h1>
+    <h1>Proyectos</h1>
+    <div className="ProjectsItems"></div>
   </div>
 );
 

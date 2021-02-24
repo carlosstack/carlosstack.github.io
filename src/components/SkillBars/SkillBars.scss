@@ -23,10 +23,9 @@ body {
   background: lightskyblue;
 }
 .skill-bars {
-  padding: 25px 30px;
-  width: 300px;
-//   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  padding: 0px 10px;
+  width: 100%;
+  border-radius: 12.5px;
 }
 .skill-bars .bar {
   margin: 20px 0;
@@ -40,7 +39,11 @@ body {
 }
 .skill-bars .bar .info span {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1;
+  height: 25px;
+  margin-left: 10px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
@@ -51,13 +54,13 @@ body {
 }
 
 .skill-bars .bar .progress-line {
-  height: 10px;
+  height: 25px;
   width: 100%;
-  background: #f0f0f00e;
+  background: #f1f1f1;
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
-  border-radius: 10px;
+  border-radius: 12.5px;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 @keyframes animate {
@@ -72,7 +75,7 @@ body {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: lightskyblue;
+  background: skyblue;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .bar .progress-line.html span {

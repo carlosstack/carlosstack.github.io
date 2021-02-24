@@ -3,6 +3,7 @@ import "./SkillBars.scss";
 
 const SkillBars: React.FC = () => (
   <div className="SkillBars">
+    
     <div className="skill-bars">
       <div className="bar">
         <div className="info">
@@ -41,6 +42,38 @@ const SkillBars: React.FC = () => (
           <span>React</span>
         </div>
         <div className="progress-line mysql">
+          <span></span>
+        </div>
+      </div>
+      <div className="bar">
+        <div className="info">
+          <span>Node</span>
+        </div>
+        <div className="progress-line html">
+          <span></span>
+        </div>
+      </div>
+      <div className="bar">
+        <div className="info">
+          <span>Python</span>
+        </div>
+        <div className="progress-line css">
+          <span></span>
+        </div>
+      </div>
+      <div className="bar">
+        <div className="info">
+          <span>SQL</span>
+        </div>
+        <div className="progress-line jquery">
+          <span></span>
+        </div>
+      </div>
+      <div className="bar">
+        <div className="info">
+          <span>Firebase</span>
+        </div>
+        <div className="progress-line python">
           <span></span>
         </div>
       </div>
