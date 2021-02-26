@@ -3,7 +3,18 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="Footer">
-      Carlos Hernández - 2021
+      <div className="Social">
+        <a className="Link">
+          <i className="fab fa-linkedin"></i>
+        </a>
+        {/* <a className="Link">
+          <i className="fab fa-linkedin"></i>
+        </a> */}
+        <a className="Link">
+          <i className="fab fa-github"></i>
+        </a>
+      </div>
+      <p> Carlos Hernández <span className="bg-skyblue">©2021</span></p>
     </div>
   );
 };

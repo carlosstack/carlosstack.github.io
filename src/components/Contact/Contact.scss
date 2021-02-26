@@ -1,6 +1,6 @@
 .ContactContainer {
   background-color: #fff;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -8,12 +8,12 @@
   margin-bottom: -20px;
 }
 .Contact {
-  height: 100%;
+  height: auto;
   width: 100%;
   padding: 50px;
   text-align: center;
   position: relative;
-  background-color: #333;
+  background-color: #1B242F;
   pointer-events: none;
 }
 
@@ -25,4 +25,18 @@
   text-transform: uppercase;
   pointer-events: all;
   opacity: 1;
+  margin-bottom: 40px;
+}
+
+.ContactEmail{
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  height: 80px;
+  width: fit-content;
+  padding: 10px 50px;
+  margin: auto;
+  // border: 3px solid skyblue;
+  border-radius: 5px;
+  // background-color: skyblue;
 }

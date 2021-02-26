@@ -1,8 +1,36 @@
 .Footer{
-    background-color: #111;
+    background-color: #1B242F;
     color: #fff;
-    height: 60px;
+    height: auto;
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+
+.Footer p{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 10px;
+}
+
+// Social Links
+
+.Social{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Social .Link{
+    font-size: 40px;
+    // background-color: #111; 
+    margin: 20px;
+    height: 65px;
+}
+
+.bg-skyblue{
+    color: skyblue;
 }
