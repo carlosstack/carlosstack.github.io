@@ -1,38 +1,20 @@
 // colors
 
-.BgSmoke{
-  background-color: #D3D3D3;
-}
 
 // About Section 
 .About {
   // min-height: 400px;
   width: 100%;
-  color: #000;
+  color: #fff;
   text-align: center;
   position: relative;
-  // background-color: #fff;
-  // margin-top: -200px;
-  // margin-bottom: -185px;
-}
-
-.About .SVGTop{
-  margin-top: -125px;
-  pointer-events: none;
+ padding: 30px;
 }
 
 .AboutContainer{
-  // margin-top: -160px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
+  margin-top: 20px;
+  font-size: 24px;
   font-weight: 400;
-}
-
-.Container{
-  padding: 20px 100px;
 }
 
 
@@ -40,5 +22,12 @@
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 28px;
+}
 
+.Skills{
+  position: relative;
+  max-width: 500px;
+  color: #000;
+  margin: auto;
+  margin-top: 50px;
 }

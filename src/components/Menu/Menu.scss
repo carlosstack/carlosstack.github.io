@@ -1,19 +1,18 @@
-
 .BgPink {
   background-color: deeppink !important;
 }
 
-.BgViolet{
-  background-color: #82279B !important;
+.BgViolet {
+  background-color: #82279b !important;
 }
 
-.BgBlue{
-  background-color: #0A1C39 !important;
+.BgBlue {
+  background-color: #0a1c39 !important;
 }
 
 // Grid
 .Menu {
-  background-color: #222;
+  background-color: #171a21;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -52,11 +51,12 @@
 .Photo .BorderOnHover {
   background-color: transparent !important;
   align-items: flex-end !important;
+  color: #fff;
 }
 
 .Photo .Info {
   position: absolute;
-  padding: 40px;
+  padding: 30px 60px;
 }
 
 .Photo .Info p {
@@ -88,7 +88,6 @@
   justify-content: center;
   align-items: center;
   font-size: 60px;
-  background-color: #3D3D3D;
   border: 4px solid transparent;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 3px;
@@ -109,13 +108,10 @@
 }
 
 .RandomQuotes p {
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 
-.RandomQuotes h6 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
 // Cube
 .cube {
@@ -143,7 +139,6 @@
   background: #297fb950;
 }
 
-
 /* Position the faces */
 .flippety {
   -webkit-transform: translateZ(100px);
@@ -161,7 +156,7 @@
   transform: rotateX(90deg); /* Text bleed at 90º */
 }
 
-// Tools 
+// Tools
 .tools {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
@@ -175,4 +170,33 @@
   font-size: 20px;
 }
 
+@media (max-width: 1140px) {
+  .Menu {
+    overflow-y: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: auto;
+  }
+}
 
+@media (max-width: 800px) {
+  .Menu {
+    overflow-y: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: auto;
+  }
+}
+
+
+@keyframes anim {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

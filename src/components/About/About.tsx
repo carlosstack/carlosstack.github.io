@@ -23,6 +23,9 @@ const About: React.FC = () => (
         Enfocado en el diseño de soluciones confiables y atractivas para los
         clientes de la mano de las mejores tecnologias del momento.
       </p>
+      <div className="Skills">
+          <SkillBars />
+        </div>
       {/* 
       <div className="SkillsIcons">
         <span className="fast">

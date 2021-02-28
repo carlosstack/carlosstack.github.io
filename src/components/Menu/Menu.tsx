@@ -1,19 +1,20 @@
 import React from "react";
 import "./Menu.scss";
 import MePhoto from "../../assets/me.jpg";
+import RandomQuotes from "../RandomQuotes/RandomQuotes";
+import { Link } from "react-router-dom";
 
 const Menu: React.FC = () => (
   <div className="Menu">
     <div className="GridItem Photo">
-      <div className="GridItemInner BorderOnHover">
+      <Link to="/about" className="GridItemInner BorderOnHover">
         <div className="Info">
           <h1>Carlos Hernández</h1>
           <p>
-            Soy un desarrollador web full stack que vive en Caracas,
-            Venezuela.
+           Desarrollador web full stack.
           </p>
         </div>
-      </div>
+      </Link>
     </div>
     <div className="GridItem">
       <div className="GridItemInner BorderOnHover BgViolet">
@@ -33,7 +34,7 @@ const Menu: React.FC = () => (
       </div>
       <div className="GridItem">
         <div className="GridItemInner BorderOnHover">
-          <i className="fas fa-music"></i>
+          <i className="fas fa-toolbox"></i>
         </div>
       </div>
       <div className="GridItem">
@@ -55,10 +56,7 @@ const Menu: React.FC = () => (
     </div>
     <div className="GridItem">
       <div className="GridItemInner BorderOnHover RandomQuotes">
-        <h6>Ramdon quotes Machine</h6>
-        <p>
-          "Soy un desarrollador web full stack que vive en Caracas, Venezuela."
-        </p>
+        <RandomQuotes />
       </div>
     </div>
     <div className="GridItem">
