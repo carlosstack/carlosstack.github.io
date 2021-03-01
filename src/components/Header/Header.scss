@@ -1,72 +1,40 @@
-// Header
-
-.Header {
-  color: #000;
-  background-color: #fff;
-  height: 100vh;
-  width: 100%;  
-}
-
-.Header div {
+.Header{
+  height: 450px;
   width: 100%;
-  height: 100vh;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  margin-bottom: -100px;
 }
 
-.HeaderTitle {
-  font-size: 48px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.HeaderSubTitle {
-  margin: 5px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.PerfilImg {
+.Header .PerfilImg{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin: 25px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.DownBtn {
-  font-size: 16px;
-  border: none;
-  background-color: #E31B6D;
-  color: #fff;
-  width: 80px;
-  height: 80px;
-  margin-top: 20px;
-  border-radius: 50%;
-  transition: 0.2s ease-in;
-  cursor: pointer;
+.Header .Title{
+  font-size: 42px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.Header .SubTitle{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.Header .SocialLinks{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
 }
 
-.DownBtn i {
-  font-size: 18px;
-  transition: 0.2s ease-in;
+.Header .SocialLinks a{
+  margin: 0 10px;
+  font-size: 30px;
+  color: #444;
 }
-
-.DownBtn:hover {
-  background-color: skyblue;
-  border-color: skyblue;
-  color: #000;
-}
-
-
-
-
-

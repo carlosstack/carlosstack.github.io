@@ -1,14 +1,10 @@
 import React from "react";
 import "./Header.scss";
 import PerfilImg from "../../assets/me.jpg";
-import Particles from "react-particles-js";
-import { Link } from "react-router-dom";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 const Header: React.FC = () => (
-  <div>
-    <div>
-      <Particles
+  <div className="Header">
+    {/* <Particles
         className="particlesjs"
         height={"100%"}
         params={{
@@ -42,18 +38,17 @@ const Header: React.FC = () => (
             },
           },
         }}
-      />
-      <header className="Header">
-        <div>
-          <img className="PerfilImg" src={PerfilImg} alt="" />
-          <span className="HeaderTitle">Carlos Hernández</span>
-
-          <p className="HeaderSubTitle">Desarrollador web full stack.</p>
-          <Link to="/menu" className="DownBtn">
-            <i className="fas fa-sign-in-alt"></i>
-          </Link>
-        </div>
-      </header>
+      /> */}
+    <img className="PerfilImg" src={PerfilImg} alt="" />
+    <h1 className="Title">Carlos Hernández</h1>
+    <h2 className="SubTitle">Full Stack Developer</h2>
+    <div className="SocialLinks">
+      <a href="#">
+        <i className="fab fa-linkedin"></i>
+      </a>
+      <a href="#">
+        <i className="fab fa-github"></i>
+      </a>
     </div>
   </div>
 );

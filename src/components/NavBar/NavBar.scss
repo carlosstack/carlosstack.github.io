@@ -1,43 +1,22 @@
-.NavBar {
-  width: 100%;
-  height: 60px;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  background-color: #333;
-  padding-top: 10px;
-  z-index: 1000;
-  border-bottom: 3px solid skyblue;
-  text-transform: uppercase;
+.Navbar{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    background-color: #93CA44;
+    color: #FFF;
+    z-index: 1000;
 }
 
-
-.NavContainer {
-  display: flex;
-  // justify-content: center;
-  align-items: center;
-  padding: 5px 40px;
-
+.Navbar a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFF;
+    &:hover{
+        color: #000;
+        text-decoration: underline;
+    }
 }
-
-.NavContainer a {
-  background: none;
-  border: 1px solid transparent;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  transition: .2s linear;
-  transform-origin: center;
-  pointer-events: all;
-  text-decoration: none;
-  border-bottom: none;
-  text-align: center;
-  padding: 0px 30px;
-
-}
-
-.NavContainer a:hover {
-  cursor: pointer;
-  color: skyblue;
-}
-

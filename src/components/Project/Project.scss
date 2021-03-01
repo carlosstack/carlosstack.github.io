@@ -1,0 +1,95 @@
+@import "../../assets/styles/variables.scss";
+
+.Project {
+  height: 450px;
+  width: 100%;
+}
+
+.BgProject {
+  background-color: $backgroundProject;
+}
+
+.TopSvg {
+  pointer-events: none;
+  margin-bottom: -60px;
+}
+
+.BottomSvg {
+  pointer-events: none;
+  margin-top: -60px;
+  z-index: 0;
+}
+
+//Project structure styles
+
+.Container {
+  margin: 0;
+  padding: 25px 15%;
+}
+
+.InfoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Reverse {
+  flex-direction: row-reverse;
+}
+
+.Project .Container .MainImg {
+  width: 550px;
+  height: 300px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.Project .Container .ProjectTech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 100px;
+}
+
+.Project .Container .ActionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Project .Container .ActionBtn {
+  background-color: #549678;
+  padding: 10px 50px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.InfoContainer .Title {
+  font-size: 24px;
+  color: $secondary;
+  text-decoration: none;
+}
+
+.InfoContainer .Title h1 {
+  font-weight: 600;
+}
+
+.InfoContainer .Description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.InfoContainer .TechTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.InfoContainer .TechTags {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
