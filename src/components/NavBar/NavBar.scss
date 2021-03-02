@@ -1,22 +1,30 @@
-.Navbar{
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    background-color: #93CA44;
-    color: #FFF;
-    z-index: 1000;
+.Navbar {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  background-color: #93ca44;
+  color: #fff;
+  z-index: 1000;
 }
 
-.Navbar a{
-    text-decoration: none;
-    font-weight: 500;
-    color: #FFF;
-    &:hover{
-        color: #000;
-        text-decoration: underline;
-    }
+.Navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
 }

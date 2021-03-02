@@ -7,17 +7,7 @@ import spacenewsImg from "../../assets/projects/spacenews.png";
 
 const Experiments = () => (
   <Fragment>
-    <svg
-      className="TopSvg"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#f1f1f1"
-        fill-opacity="1"
-        d="M0,96L1440,256L1440,320L0,320Z"
-      ></path>
-    </svg>
+    <div className="ExperimentsContainer">
     <div className="Experiments">
       <h1 className="Title">Algunos pequeños experiementos</h1>
       <div className="Grid">
@@ -35,17 +25,7 @@ const Experiments = () => (
           </a>
       </div>
     </div>
-    <svg
-      className="BottomSvg"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#f1f1f1"
-        fill-opacity="1"
-        d="M0,96L1440,256L1440,0L0,0Z"
-      ></path>
-    </svg>
+    </div>
   </Fragment>
 );
 

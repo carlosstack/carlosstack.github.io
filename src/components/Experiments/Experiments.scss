@@ -1,48 +1,85 @@
 @import "../../assets/styles/variables.scss";
 
-.Experiments{
-    height: 450px;
-    width: auto;
-    background-color: $backgroundProject;
-    padding: 60px 10%;
+.ExperimentsContainer{
+  min-height: 600px;
+  width: 100%;
+  transform: skewY(5deg);
+  background-color: $backgroundProject;
+  margin: 0;
 }
 
-.Experiments .Title{
-    text-align: center;
-    color: $primary;
-    font-weight: 300;
-    font-size: 38px;
-    margin-bottom: 25px;
+.Experiments {
+  padding: 100px 15%;
+  width: 100%;
+  transform: skewY(-5deg);
+}
+
+.Experiments .Title {
+  text-align: center;
+  color: $primary;
+  font-weight: 300;
+  font-size: 38px;
+  margin-bottom: 25px;
 }
 
 .TopSvg {
-    pointer-events: none;
-    margin-bottom: -60px;
+  pointer-events: none;
+  margin-bottom: -60px;
+}
+
+.BottomSvg {
+  pointer-events: none;
+  margin-top: -60px;
+  z-index: 0;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px 0;
+  gap: 10px;
+}
+
+.Grid a img {
+  height: 180px;
+  width: 260px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &:hover {
+    transform: scale(1.2);
   }
-  
-  .BottomSvg {
-    pointer-events: none;
-    margin-top: -60px;
-    z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5px 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .Grid{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 25px 0;
-      gap: 10px;
+  .Grid a img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
   }
 
- 
-  .Grid a img{
-      height: 180px;
-      width: 260px;
-      border-radius: 10px;
-      transition: .3s linear;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-      &:hover{
-        transform: scale(1.2);
-      }
+  .Grid a{
+    display: flex;
+    justify-content: center;
   }
 
+  .Experiments .Title {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .Experiments {
+    padding: 80px 10%;
+  }
+}

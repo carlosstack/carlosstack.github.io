@@ -1,7 +1,7 @@
 .Footer{
     width: 100%;
     padding: 50px;
-    margin-top: -60px;
+    margin-top: 20px;
 }
 
 .Footer h1{
@@ -20,4 +20,15 @@
 
 .Footer p{
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .Footer{
+        padding: 20px;
+    }
+    
+    .Footer h1{
+
+        font-size: 20px;
+    }
 }

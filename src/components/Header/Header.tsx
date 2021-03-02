@@ -41,12 +41,12 @@ const Header: React.FC = () => (
       /> */}
     <img className="PerfilImg" src={PerfilImg} alt="" />
     <h1 className="Title">Carlos Hernández</h1>
-    <h2 className="SubTitle">Full Stack Developer</h2>
+    <h2 className="SubTitle">Desarrollador Web Full Stack</h2>
     <div className="SocialLinks">
-      <a href="#">
+      <a href="https://www.linkedin.com/in/carlosehernandezr/">
         <i className="fab fa-linkedin"></i>
       </a>
-      <a href="#">
+      <a href="https://github.com/carlosstack">
         <i className="fab fa-github"></i>
       </a>
     </div>
